@@ -1,0 +1,106 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to bottom, #a2d4f7, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 900px;
+}
+
+
+.titulo {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;    
+}
+
+.submit-button-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;    
+}  
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #003366;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+
+.box {
+  background-color: #ffffffcc;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.02);
+}
+
+
+.content {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+
+
+.draggable {
+  background-color: #e6f2ff;
+  border: 2px solid #3399ff;
+  border-radius: 5px;
+  cursor: grab;
+  transition: background-color 0.3s;
+}
+
+.draggable:hover {
+  background-color: #d0e7ff;
+}
+
+#logout-button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+  background-color: #005f99;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .box {
+      width: 90%;
+      height: auto;
+    }
+  
+    .draggable {
+      font-size: 16px;
+    }
+  }
+  

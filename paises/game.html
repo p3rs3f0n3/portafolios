@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego de Capitales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="titulo">
+        <h1>CONECTA PAISES</h1>
+      </div>
+
+      <div class="container"> 
+        <div class="box">
+            <p>PAIS</p>  
+            <div id="countries" class="content">
+                <!-- Los países aparecerán aquí -->
+            </div>
+        </div>
+    
+        <div class="box">
+            <p>CAPITAL</p>  
+            <div id="capitals" class="content">
+                <!-- Las capitales aparecerán aquí -->
+            </div>
+        </div>       
+    </div>      
+
+    <div class="submit-button-container">
+        <button onclick="checkAnswers()" id="logout-button" >Comprobar respuestas</button>
+    </div> 
+
+    <script src="https://unpkg.com/jsplumb"></script>
+    <script src="game.js"></script>
+</body>
+</html>
